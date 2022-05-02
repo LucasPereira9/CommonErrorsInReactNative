@@ -17,5 +17,4 @@
 
  ```taskkill /f /im node.exe```  // for windows
  
- 
  ```pkill node``` // for linux and MacOS
