@@ -18,3 +18,16 @@
  ```taskkill /f /im node.exe```  // for windows
  
  ```pkill node``` // for linux and MacOS
+ 
+ 
+## The development server returned response error code: 500
+Usually this error happens when you try to import a JS file that doesn't have export defaultor doesn't have any components inside it.
+
+First check all recent files and imports you've done to make sure they all have import/exports and their components.
+
+If that doesn't work, close the Metro Bundler terminal window that opens automatically with run-ios/run-androidand in your project folder run:
+
+```npx react-native start --reset-cache```
+or ```yarn run react-native start --reset-cache```
+or ```yarn start --reset-cache```
+which command to use will depend on the situation.
