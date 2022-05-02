@@ -15,5 +15,5 @@
 ## Error: listen EADDRINUSE :::8081
 *When this error occurs, it means that port 8081 is already being used. There is probably already some terminal running the Metro Bundler of your project, just close it and try again. However, if you don't find this process running, you can end it manually with the following command:*
 
-> taskkill /f /im node.exe  // for windows
-> pkill node // for linux and MacOS
+ ```taskkill /f /im node.exe```  // for windows
+ ```pkill node``` // for linux and MacOS
