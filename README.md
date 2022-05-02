@@ -36,11 +36,13 @@ or ```yarn start --reset-cache```
 which command to use will depend on the situation.
 
 
+
+
 ## internal/modules/cjs/loader.js ... throw error cannot find module ...
 If you get such an error, check that your project path is a valid path. It is not a valid path if it contains space or special characters. Examples:
 
-> c:/folder with space/project  ## invalid path
+> c:/folder with space/project     ## invalid path
 
-> c:/perfectCafé/project ## invalid path
+> c:/perfectCafé/project    ## invalid path
 
-> c:/components/header/index.js ## valid path
+> c:/components/header/index.js    ## valid path
